@@ -3,8 +3,8 @@
 
 <!-- METADATA -->
 <head>
-    <title>Document</title>
-    <link rel="icon" href="">
+    <title>Spotify Music</title>
+    <link rel="icon" href="./img/favicon.ico">
 
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,17 +13,222 @@
     <!-- GOOGLE FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700;900&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
 
     <!-- FONT AWESOME 6 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- STYLESHEETS -->
+    <link rel="stylesheet" href="./stylesheets/root-custom.css">
+    <link rel="stylesheet" href="./stylesheets/css-reset.css">
+    <link rel="stylesheet" href="./stylesheets/style.css">
 
 </head>
 
 <!-- BODY -->
-<body>
+<body class="debug">
+    <!--#region : flexbox for MAIN and ASIDE  -->
+    <div class="d-flex row-reverse">
+        <!--#region: MAIN  -->
+        <main class="bg-primary">
+            <h1 class="visually-hidden">Spotify</h1>
+            <!--#region: HEADER call-to-action -->
+            <div class="call-to-action bg-secondary">
+                <button>Upgrade to Premium</button>
+            </div>
+            <!--#endregion: HEADER call-to-action -->
     
+            <!--#region: NAV main-nav  -->
+            <nav class="main-nav" aria-label="Main" role="navigation">
+                <ul class="main-nav-links d-flex">
+                    <li class="main-nav-item upper-case text-light">Your Mixes</li>
+                    <li class="main-nav-item upper-case text-light">Podcast</li>
+                    <li class="main-nav-item upper-case text-light">Trending</li>
+                    <li class="main-nav-item upper-case text-light">Genre and Mood</li>
+                    <li class="main-nav-item upper-case text-light">New</li>
+                    <li class="main-nav-item upper-case text-light">Explore</li>
+                </ul>
+            </nav>
+            <!--#endregion: NAV main-nav  -->
+
+            <!--#region: CONTENT  -->
+            <div class="container">
+                <!--#region: SECTION recently-played -->
+                <section id="recently-played">
+                    <h2 class="t-black">Recently Played</h2>
+                    <div class="collection d-flex f-wrap">
+                        <!-- collection-item1 -->
+                        <div class="collection-item d-flex">
+                            <!-- collection-item-cover -->
+                            <div class="collection-item-cover">
+                                <img src="./img/metal_lifting.jpg" alt="Heavy Metal">
+                            </div>
+                        </div>
+
+                        <!-- collection-item2 -->
+                        <div class="collection-item d-flex">
+                            <!-- collection-item-cover -->
+                            <div class="collection-item-cover">
+                                <img src="./img/stranger.jpeg" alt="Heavy Metal">
+                            </div>
+                        </div>
+
+                        <!-- collection-item3 -->
+                        <div class="collection-item d-flex">
+                            <!-- collection-item-cover -->
+                            <div class="collection-item-cover">
+                                <img src="./img/aquietplace.jpeg" alt="Heavy Metal">
+                            </div>
+                        </div>
+
+                        <!-- collection-item4 -->
+                        <div class="collection-item d-flex">
+                            <!-- collection-item-cover -->
+                            <div class="collection-item-cover">
+                                <img src="./img/split.jpeg" alt="Heavy Metal">
+                            </div>
+                        </div>
+
+                        <!-- collection-item5 -->
+                        <div class="collection-item d-flex">
+                            <!-- collection-item-cover -->
+                            <div class="collection-item-cover">
+                                <img src="./img/cure.jpeg" alt="Heavy Metal">
+                            </div>
+                        </div>
+
+                        <!-- collection-item6 -->
+                        <div class="collection-item d-flex">
+                            <!-- collection-item-cover -->
+                            <div class="collection-item-cover">
+                                <img src="./img/sinister.jpeg" alt="Heavy Metal">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!--#endregion: SECTION recently-played -->
+
+                <!--#region: SECTION Created by -->
+                <section id="created-by">
+                    <h2 class="t-black">Created by Elias</h2>
+                    <div class="collection d-flex f-wrap">
+                        <!-- collection-item1 -->
+                        <div class="collection-item d-flex">
+                            <!-- collection-item-cover -->
+                            <div class="collection-item-cover">
+                                <img src="./img/radar.jpeg" alt="Heavy Metal">
+                            </div>
+                        </div>
+
+                        <!-- collection-item2 -->
+                        <div class="collection-item d-flex">
+                            <!-- collection-item-cover -->
+                            <div class="collection-item-cover">
+                                <img src="./img/mixdaily.jpeg" alt="Heavy Metal">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!--#endregion: SECTION Created by -->
+
+                <!--#region: SECTION popular-artists -->
+                <section id="popular-artists">
+                    <h2 class="t-black">Popular Artists</h2>
+                    <div class="collection d-flex f-wrap">
+                        <!-- collection-item1 -->
+                        <div class="collection-item d-flex">
+                            <!-- collection-item-cover -->
+                            <div class="collection-item-cover">
+                                <img src="./img/youg.jpeg" alt="Heavy Metal">
+                            </div>
+                        </div>
+
+                        <!-- collection-item2 -->
+                        <div class="collection-item d-flex">
+                            <!-- collection-item-cover -->
+                            <div class="collection-item-cover">
+                                <img src="./img/einaudi.jpeg" alt="Heavy Metal">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!--#endregion: SECTION popular-artists -->
+            <!--#endregion: CONTENT  -->
+            </div>
+        </main>
+        <!--#endregion: MAIN  -->
+
+        <!--#region : ASIDE Side Navigation  -->
+        <aside class="side-nav bg-black" aria-labelledby="side-nav-title" role="navigation">
+            <h2 id="side-nav-title" class="visually-hidden">Side Navigation</h2>
+            <div class="container d-flex col">
+                <!--#region: Wrapper top section side navigation  -->
+                <div class="wrapper">
+                    <div class="company-logo">
+                        <a href="https://www.spotify.com/it/" class="navbar-brand d-none-xs" aria-label="Spotify">
+                            <img src="./img/logo.svg" alt="Spotify Logo">
+                        </a>
+                        <a href="https://www.spotify.com/it/" class="navbar-brand d-none-sm" aria-label="Spotify">
+                            <img src="./img/logo-small.svg" alt="Spotify Logo">
+                        </a>
+                    </div>
+
+                    <nav aria-label="Library" role="navigation">
+                        <div>
+                            <i aria-hidden="true" class="fa-solid fa-house" title="Home Page"></i>
+                            <h3 class="d-none-xs">Home</h3>
+                        </div>
+                        
+                        <div>
+                            <i aria-hidden="true" class="fa-solid fa-magnifying-glass" title="Search"></i>
+                            <h3 class="d-none-xs">Search</h3>
+                        </div>
+
+                        <div>
+                            <i aria-hidden="true" class="fa-solid fa-lines-leaning" title="My Library"></i>
+                            <h3 class="d-none-xs">My Library</h3>
+                        </div>
+                    </nav>
+
+                    <div class="d-none-xs">
+                        <h3 class="t-bold upper-case">Playlist</h3>
+                        <div class="d-flex">
+                            <i aria-hidden="true" class="fa-solid fa-plus" title="Create Playlist"></i>
+                            <h4>Create Playlist</h4>
+                        </div>
+
+                        <h4>Playlist 1</h4>
+                        <h4>Playlist 2</h4>
+                        <h4>Playlist 3</h4>
+                        <h4>Playlist 4</h4>
+                        <h4>Playlist 5</h4>
+                    </div>
+                </div>
+                <!--#endregion: Wrapper top section side navigation  -->
+
+                <!--#region: Wrapper bottom section side navigation  -->
+                <div class="wrapper">
+                    <div class="d-flex">
+                        <i aria-hidden="true" class="fa-solid fa-arrow-down" title="Install Spotify Desktop"></i>
+                        <h3>Install App</h3>
+                    </div>
+                    <div>
+                        <div class="user-profile-image"></div>
+                        <h3 class="t-bold">Elias</h3>
+                    </div>
+                </div>
+                <!--#endregion: Wrapper bottom section side navigation  -->
+            </div>
+            
+        </aside>
+        <!--#endregion : ASIDE Side Navigation  -->
+    
+        <!--#region : FIXED FOOTER -->
+        <footer class="site-footer bg-dark">
+
+        </footer>
+        <!--#endregion : FIXED FOOTER -->
+    </div>
+    <!--#endregion : flexbox for MAIN and ASIDE  -->
 </body>
 </html>
