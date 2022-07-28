@@ -82,6 +82,29 @@ footer {
     border-radius: 100px;
 }
 
+.nav-link{
+    position: relative;
+    padding-bottom: .2rem;
+    border-bottom: 2px solid transparent;
+}
+
+.nav-link:hover {
+    border-color: var(--clr-accent);
+}
+
+.nav-link::before,
+.nav-link::after {
+    content: '';
+    width: 25%;
+    height: 4px;
+    position: absolute;
+        bottom: -4px;
+
+    background-color: var(--clr-primary);
+}
+
+.nav-link::after { right: 0; }
+
 /*#region: Progress Bar */
 .meter {
     width: 100%;
@@ -104,10 +127,23 @@ footer {
     padding: var(--gap) var(--small-gap);
 }
 .call-to-action .ui-button {
-    padding: .5rem 1.5rem;
+    padding: var(--small-gap) var(--gap);
 }
 /*#endregion call-to-action */
+
 /* ************************** */
+/*#region main-nav */
+.main-nav {
+    padding: var(--small-gap);
+}
+
+.main-nav-links {
+    justify-content: center;
+    column-gap: var(--gap);
+    row-gap: var(--gap);
+}
+/*#endregion main-nav*/
+
 
 /*#endregion: BLOCKS */
 /* ****************************************************************************** */
