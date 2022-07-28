@@ -60,48 +60,48 @@
                         <!-- collection-item1 -->
                         <div class="collection-item d-flex">
                             <!-- collection-item-cover -->
-                            <div class="collection-item-cover">
-                                <img src="./img/metal_lifting.jpg" alt="Heavy Metal">
+                            <div class="collection-item-cover album-cover">
+                                <img src="./img/metal_lifting.jpg" alt="Heavy Metal Collection">
                             </div>
                         </div>
 
                         <!-- collection-item2 -->
                         <div class="collection-item d-flex">
                             <!-- collection-item-cover -->
-                            <div class="collection-item-cover">
-                                <img src="./img/stranger.jpeg" alt="Heavy Metal">
+                            <div class="collection-item-cover album-cover">
+                                <img src="./img/stranger.jpeg" alt="Cover: Stranger Things Vol. 1 (a Netflix Original Series Soundtrack)">
                             </div>
                         </div>
 
                         <!-- collection-item3 -->
                         <div class="collection-item d-flex">
                             <!-- collection-item-cover -->
-                            <div class="collection-item-cover">
-                                <img src="./img/aquietplace.jpeg" alt="Heavy Metal">
+                            <div class="collection-item-cover album-cover">
+                                <img src="./img/aquietplace.jpeg" alt="Cover: A Quiet Place">
                             </div>
                         </div>
 
                         <!-- collection-item4 -->
                         <div class="collection-item d-flex">
                             <!-- collection-item-cover -->
-                            <div class="collection-item-cover">
-                                <img src="./img/split.jpeg" alt="Heavy Metal">
+                            <div class="collection-item-cover album-cover">
+                                <img src="./img/split.jpeg" alt="Cover: Split">
                             </div>
                         </div>
 
                         <!-- collection-item5 -->
                         <div class="collection-item d-flex">
                             <!-- collection-item-cover -->
-                            <div class="collection-item-cover">
-                                <img src="./img/cure.jpeg" alt="Heavy Metal">
+                            <div class="collection-item-cover album-cover">
+                                <img src="./img/cure.jpeg" alt="Playlist: A cure for wellness">
                             </div>
                         </div>
 
                         <!-- collection-item6 -->
                         <div class="collection-item d-flex">
                             <!-- collection-item-cover -->
-                            <div class="collection-item-cover">
-                                <img src="./img/sinister.jpeg" alt="Heavy Metal">
+                            <div class="collection-item-cover album-cover">
+                                <img src="./img/sinister.jpeg" alt="Cover: Sinister">
                             </div>
                         </div>
                     </div>
@@ -115,16 +115,16 @@
                         <!-- collection-item1 -->
                         <div class="collection-item d-flex">
                             <!-- collection-item-cover -->
-                            <div class="collection-item-cover">
-                                <img src="./img/radar.jpeg" alt="Heavy Metal">
+                            <div class="collection-item-cover album-cover">
+                                <img src="./img/radar.jpeg" alt="Collection: Release Radar">
                             </div>
                         </div>
 
                         <!-- collection-item2 -->
                         <div class="collection-item d-flex">
                             <!-- collection-item-cover -->
-                            <div class="collection-item-cover">
-                                <img src="./img/mixdaily.jpeg" alt="Heavy Metal">
+                            <div class="collection-item-cover album-cover">
+                                <img src="./img/mixdaily.jpeg" alt="Collection: Daily Mix">
                             </div>
                         </div>
                     </div>
@@ -138,16 +138,16 @@
                         <!-- collection-item1 -->
                         <div class="collection-item d-flex">
                             <!-- collection-item-cover -->
-                            <div class="collection-item-cover">
-                                <img src="./img/youg.jpeg" alt="Heavy Metal">
+                            <div class="collection-item-cover album-cover">
+                                <img src="./img/youg.jpeg" alt="Artist: Youg">
                             </div>
                         </div>
 
                         <!-- collection-item2 -->
                         <div class="collection-item d-flex">
                             <!-- collection-item-cover -->
-                            <div class="collection-item-cover">
-                                <img src="./img/einaudi.jpeg" alt="Heavy Metal">
+                            <div class="collection-item-cover album-cover">
+                                <img src="./img/einaudi.jpeg" alt="Artist: Luigi Einaudi">
                             </div>
                         </div>
                     </div>
@@ -213,6 +213,7 @@
                         <h3>Install App</h3>
                     </div>
                     <div>
+                        <hr class="d-none-xs">
                         <div class="user-profile-image"></div>
                         <h3 class="t-bold">Elias</h3>
                     </div>
@@ -222,13 +223,56 @@
             
         </aside>
         <!--#endregion : ASIDE Side Navigation  -->
-    
-        <!--#region : FIXED FOOTER -->
-        <footer class="site-footer bg-dark">
-
-        </footer>
-        <!--#endregion : FIXED FOOTER -->
     </div>
     <!--#endregion : flexbox for MAIN and ASIDE  -->
+
+    <!--#region : FIXED FOOTER -->
+    <footer class="media-player bg-dark d-flex">
+        <h2 class="visually-hidden">Media Player</h2>
+        <!-- song-details -->
+        <div class="song-details d-flex">
+            <div class="album-cover">
+                <img src="./img/sinister.jpeg" alt="Sinister Album">
+            </div>
+            
+            <section class="song-details-content">
+                <h3>Sinister</h3>
+                <p>No Hope</p>
+            </section>
+            
+            <div class="song-save d-flex">
+                <div class="favourite">
+                    <i class="fa-regular fa-heart favourite-heart t-thin text-grey" title="Add to Favourite" aria-hidden="true"></i>
+                    <i class="fa-solid fa-heart favourite-heart add-favourite" aria-hidden="true"></i>
+                </div>
+            </div>
+        </div>
+
+        <!-- song-player -->
+        <div class="song-player">
+            <!-- song-player-options -->
+            <div class="song-player-options d-flex">
+                <button class="player-option bg-transparent"><i class="fa-solid fa-shuffle" aria-hidden="true" title="Add to Favourite"></i></button>
+                <button class="player-option bg-transparent"><i class="fa-solid fa-backward-step" aria-hidden="true" title="Add to Favourite"></i></button>
+                <button class="player-option bg-transparent"><i class="fa-solid fa-play" aria-hidden="true" title="Add to Favourite"></i></button>
+                <button class="player-option bg-transparent"><i class="fa-solid fa-forward-step" aria-hidden="true" title="Add to Favourite"></i></button>
+                <button class="player-option bg-transparent"><i class="fa-solid fa-arrow-rotate-right" aria-hidden="true" title="Add to Favourite"></i></button>
+            </div>
+            <!-- song-player-progress -->
+            <div class="song-player-progress d-flex">
+                <!-- time stamps -->
+                <!-- progress-bar -->
+                <!-- song-length -->
+            </div>
+        </div>
+
+        <!-- other-options -->
+            <!-- icon1 -->
+            <!-- icon2 -->
+            <!-- div -->
+                <!-- icon3 -->
+                <!-- volume -->
+    </footer>
+    <!--#endregion : FIXED FOOTER -->
 </body>
 </html>

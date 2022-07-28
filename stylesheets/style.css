@@ -59,5 +59,12 @@
 
 /* ****************************************************************************** */
 /*#region: DEBUG */
+.debug .favourite {
+    position: relative;
+}
+.debug .add-favourite {
+    position: absolute;
+    opacity: 0;
+}
 /*#endregion: DEBUG */
 /* ****************************************************************************** */
