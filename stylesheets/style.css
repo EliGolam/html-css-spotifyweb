@@ -93,13 +93,23 @@ footer {
     border-radius: 100px;
 }
 
-.nav-link{
+.nav-link,
+.nav-link-alt {
     position: relative;
+}
+
+.nav-link {
     padding-bottom: .2rem;
     border-bottom: 2px solid transparent;
 }
 
-.nav-link:hover {
+.nav-link-alt {
+    padding: 0 var(--small-gap);
+    border-left: 2px solid transparent;
+}
+
+.nav-link:hover,
+.nav-link-alt:hover {
     border-color: var(--clr-accent);
 }
 
@@ -115,6 +125,8 @@ footer {
 }
 
 .nav-link::after { right: 0; }
+.nav-link::before { left: 0; }
+ 
 
 /*#region: Progress Bar */
 .meter {
@@ -135,6 +147,7 @@ footer {
 /*#region call-to-action */
 .call-to-action {
     padding: var(--gap) var(--small-gap);
+    text-align: right;
 }
 .call-to-action .ui-button {
     padding: var(--small-gap) var(--gap);
@@ -164,6 +177,46 @@ footer {
     padding: var(--gap) var(--small-gap);
 }
 /*#endregion CONTENT */
+
+/* ************************** */
+/*#region ASIDE side navigation */
+.side-nav {
+    padding: var(--small-gap) 0;
+}
+
+.nav-container {
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.company-logo {
+    margin: var(--small-gap);
+
+}
+
+.nav-container .nav-link-alt {
+    font-size: var(--fs-2);
+    text-align: center;
+}
+
+.cta-install {
+    text-align: center;
+}
+
+.cta-install .ui-button {
+    width: 23px;
+    height: 23px;
+}
+
+.user-profile-image {
+    width: 2rem;
+    height: 2rem;
+    overflow: hidden;
+    background-color: var(--clr-grey);
+    border-radius: 50%;
+}
+/*#endregion ASIDE side navigation  */
 
 /*#endregion: BLOCKS */
 /* ****************************************************************************** */

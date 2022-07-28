@@ -35,6 +35,7 @@
 
     /* SPACING */
     --flow-spacing: .5em;
+    --flow-extra-spacing: 2.5em;
 
     --row-gap: 1rem;
     --column-gap: 1.5rem;
@@ -100,3 +101,4 @@ body {
 
 /*#region Flow */
 .flow > * { margin-top: var(--flow-spacing);}
+.flow-extra > * {margin-top: var(--flow-extra-spacing);}
