@@ -39,8 +39,9 @@
     --row-gap: 1rem;
     --column-gap: 1.5rem;
 
-    --gap: 3rem;
-    --small-gap: 1rem;
+    --large-gap: 3rem;
+    --gap: 1.5rem;
+    --small-gap: .6rem;
     
     --content-width: 100%; 
 
