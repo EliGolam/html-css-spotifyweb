@@ -24,9 +24,6 @@
 /*#region : HTML element layout and default */
 .body-container {
     position: relative;
-
-    --w-side-bar: 15%;
-    --h-footer: 10vh;
 }
 
 main {
@@ -40,13 +37,13 @@ aside {
         top: 0;
         left: 0;
     height: 100%;
-    width: 15%;
+    width: var(--w-side-bar);
 }
 
 footer { 
     position: fixed;
         bottom: 0;
-    height: 10vh;
+    height: var(--h-footer);
     width: 100%;
     overflow: hidden;
 }
@@ -57,6 +54,7 @@ footer {
 
 /* ****************************************************************************** */
 /*#region: UTILITIES */
+/* ************************** */
 /*#region: flex  */
 .d-flex {
     display: flex;
@@ -75,6 +73,19 @@ footer {
 }
 /*#endregion: flex  */
 
+/* ************************** */
+/*#region collection-item */
+.collection {
+    gap: var(--small-gap);
+}
+
+.collection-item {
+    width: var(--collection-2-cards);
+    padding-bottom: var(--gap);
+}
+/*#endregion collection-item */
+
+/* ************************** */
 /* UI */
 .ui-button {
     background-color: transparent;
@@ -113,7 +124,6 @@ footer {
 }
 /*#endregion: Progress Bar */
 
-
 /*#endregion: UTILITIES */
 /* ****************************************************************************** */
 
@@ -144,6 +154,16 @@ footer {
 }
 /*#endregion main-nav*/
 
+/* ************************** */
+/*#region CONTENT */
+.section-title {
+    font-size: var(--fs-2);
+    margin-bottom: var(--gap);
+}
+.main-container {
+    padding: var(--gap) var(--small-gap);
+}
+/*#endregion CONTENT */
 
 /*#endregion: BLOCKS */
 /* ****************************************************************************** */
@@ -160,6 +180,21 @@ footer {
     }
 }
 
+@media only screen and (min-width: 768px) {
+    :root {
+        --w-side-bar: 20%;
+    }
+    
+    .collection-item {
+        width: var(--collection-4-cards);
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .collection-item {
+        width: var(--collection-6-cards);
+    }
+}
 /* ****************************************************************************** */
 /*#region: DEBUG */
 .debug .favourite {

@@ -18,14 +18,14 @@
     /* font: font-style font-variant font-weight font-size/line-height font-family; */
     --fontfamily-default: 'Montserrat', Helvetica, Arial, sans-serif;
 
-    --fs-1: 5rem;
-    --fs-2: 4rem;
-    --fs-3: 3rem;
-    --fs-4: 2rem;
-    --fs-5: .7rem;
+    --fs-1: 3rem;
+    --fs-2: 1.5rem;
+    --fs-3: 1rem;
+    --fs-4: .7rem;
+    --fs-5: .5rem;
     --fs-6: .6rem;
 
-    --fw-black: 900;
+    --fw-black: 800;
     --fw-bold: 700;
     --fw-regular: 400;
     --fw-thin: 200;
@@ -34,7 +34,7 @@
     --lh-default: 1.5;
 
     /* SPACING */
-    --flow-spacing: 1em;
+    --flow-spacing: .5em;
 
     --row-gap: 1rem;
     --column-gap: 1.5rem;
@@ -50,10 +50,18 @@
     --lg-breakpoint: 992px;
     --xl-breakpoint: 1200px;
     --xxl-breakpoint: 1400px;
+
+    /* Element variables */
+    --w-side-bar: 10%;
+    --h-footer: 10vh;
+
+    --collection-2-cards: calc(100% / 2 - var(--small-gap));
+    --collection-4-cards: calc(100% / 4 - var(--small-gap));
+    --collection-6-cards: calc(100% / 6 - var(--small-gap));
 }
 
 body {
-    font: var(--fw-regular) var(--fs-5)/var(--lh-default) var(--fontfamily-default);
+    font: var(--fw-regular) var(--fs-4)/var(--lh-default) var(--fontfamily-default);
     color: var(--clr-white);
 }
 
@@ -82,8 +90,13 @@ body {
 .text-grey { color: var(--clr-grey);}
 
 .upper-case { text-transform: uppercase;}
+.t-align-center { text-align: center;}
+
 .t-black { font-weight: var(--fw-black);}
 .t-bold { font-weight: var(--fw-bold);}
 .t-thin { font-weight: var(--fw-thin);}
 .t-extra-thin { font-weight: var(--fw-extra-thin);}
 /*#endregion : text */
+
+/*#region Flow */
+.flow > * { margin-top: var(--flow-spacing);}

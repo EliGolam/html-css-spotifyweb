@@ -29,7 +29,7 @@
 <body class="debug bg-primary">
     <div class="body-container">
         <!--#region : flexbox for MAIN and ASIDE  -->
-        <div class="main-container d-flex row-reverse">
+        <div class="d-flex row-reverse">
             <!--#region : MAIN -->
             <main>
                 <h1 class="visually-hidden">Spotify</h1>
@@ -53,57 +53,81 @@
                 <!--#endregion: NAV main-nav  -->
 
                 <!--#region: CONTENT  -->
-                <div class="container">
+                <div class="main-container">
                     <!--#region: SECTION recently-played -->
                     <section id="recently-played">
-                        <h2 class="t-black">Recently Played</h2>
-                        <div class="collection d-flex f-wrap">
+                        <h2 class="section-title t-black">Recently Played</h2>
+                        <div class="collection d-flex f-wrap t-align-center">
                             <!-- collection-item1 -->
-                            <div class="collection-item d-flex">
+                            <div class="collection-item d-flex col">
                                 <!-- collection-item-cover -->
                                 <div class="collection-item-cover album-cover">
                                     <img src="./img/metal_lifting.jpg" alt="Heavy Metal Collection">
                                 </div>
+                                <section class="collection-content flow flow">
+                                    <h3>Album Name</h3>
+                                    <p>Artist</p>
+                                </section>
                             </div>
 
                             <!-- collection-item2 -->
-                            <div class="collection-item d-flex">
+                            <div class="collection-item d-flex col">
                                 <!-- collection-item-cover -->
                                 <div class="collection-item-cover album-cover">
                                     <img src="./img/stranger.jpeg" alt="Cover: Stranger Things Vol. 1 (a Netflix Original Series Soundtrack)">
                                 </div>
+                                <section class="collection-content flow">
+                                    <h3>Album Name</h3>
+                                    <p>Artist</p>
+                                </section>
                             </div>
 
                             <!-- collection-item3 -->
-                            <div class="collection-item d-flex">
+                            <div class="collection-item d-flex col">
                                 <!-- collection-item-cover -->
                                 <div class="collection-item-cover album-cover">
                                     <img src="./img/aquietplace.jpeg" alt="Cover: A Quiet Place">
                                 </div>
+                                <section class="collection-content flow">
+                                    <h3>Album Name</h3>
+                                    <p>Artist</p>
+                                </section>
                             </div>
 
                             <!-- collection-item4 -->
-                            <div class="collection-item d-flex">
+                            <div class="collection-item d-flex col">
                                 <!-- collection-item-cover -->
                                 <div class="collection-item-cover album-cover">
                                     <img src="./img/split.jpeg" alt="Cover: Split">
                                 </div>
+                                <section class="collection-content flow">
+                                    <h3>Album Name</h3>
+                                    <p>Artist</p>
+                                </section>
                             </div>
 
                             <!-- collection-item5 -->
-                            <div class="collection-item d-flex">
+                            <div class="collection-item d-flex col">
                                 <!-- collection-item-cover -->
                                 <div class="collection-item-cover album-cover">
                                     <img src="./img/cure.jpeg" alt="Playlist: A cure for wellness">
                                 </div>
+                                <section class="collection-content flow">
+                                    <h3>Album Name</h3>
+                                    <p>Artist</p>
+                                </section>
                             </div>
 
                             <!-- collection-item6 -->
-                            <div class="collection-item d-flex">
+                            <div class="collection-item d-flex col">
                                 <!-- collection-item-cover -->
                                 <div class="collection-item-cover album-cover">
                                     <img src="./img/sinister.jpeg" alt="Cover: Sinister">
                                 </div>
+                                <section class="collection-content flow">
+                                    <h3>Album Name</h3>
+                                    <p>Artist</p>
+                                </section>
                             </div>
                         </div>
                     </section>
@@ -111,10 +135,10 @@
 
                     <!--#region: SECTION Created by -->
                     <section id="created-by">
-                        <h2 class="t-black">Created by Elias</h2>
+                        <h2 class="section-title t-black">Created by Elias</h2>
                         <div class="collection d-flex f-wrap">
                             <!-- collection-item1 -->
-                            <div class="collection-item d-flex">
+                            <div class="collection-item d-flex col">
                                 <!-- collection-item-cover -->
                                 <div class="collection-item-cover album-cover">
                                     <img src="./img/radar.jpeg" alt="Collection: Release Radar">
@@ -122,7 +146,7 @@
                             </div>
 
                             <!-- collection-item2 -->
-                            <div class="collection-item d-flex">
+                            <div class="collection-item d-flex col">
                                 <!-- collection-item-cover -->
                                 <div class="collection-item-cover album-cover">
                                     <img src="./img/mixdaily.jpeg" alt="Collection: Daily Mix">
@@ -134,10 +158,10 @@
 
                     <!--#region: SECTION popular-artists -->
                     <section id="popular-artists">
-                        <h2 class="t-black">Popular Artists</h2>
+                        <h2 class="section-title t-black">Popular Artists</h2>
                         <div class="collection d-flex f-wrap">
                             <!-- collection-item1 -->
-                            <div class="collection-item d-flex">
+                            <div class="collection-item d-flex col">
                                 <!-- collection-item-cover -->
                                 <div class="collection-item-cover album-cover">
                                     <img src="./img/youg.jpeg" alt="Artist: Youg">
@@ -145,7 +169,7 @@
                             </div>
 
                             <!-- collection-item2 -->
-                            <div class="collection-item d-flex">
+                            <div class="collection-item d-flex col">
                                 <!-- collection-item-cover -->
                                 <div class="collection-item-cover album-cover">
                                     <img src="./img/einaudi.jpeg" alt="Artist: Luigi Einaudi">
