@@ -22,8 +22,8 @@
     --fs-2: 1.5rem;
     --fs-3: 1rem;
     --fs-4: .7rem;
-    --fs-5: .5rem;
-    --fs-6: .6rem;
+    --fs-5: .6rem;
+    --fs-6: .3rem;
 
     --fw-black: 800;
     --fw-bold: 700;
@@ -43,6 +43,7 @@
     --large-gap: 3rem;
     --gap: 1.5rem;
     --small-gap: .6rem;
+    --tiny-gap: 1px;
     
     --content-width: 100%; 
 

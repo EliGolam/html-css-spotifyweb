@@ -256,32 +256,37 @@
             <h2 class="visually-hidden">Media Player</h2>
             <!-- song-details -->
             <div class="song-details d-flex">
-                <div class="album-cover">
-                    <img src="./img/sinister.jpeg" alt="Sinister Album">
-                </div>
-                
-                <section class="song-details-content">
-                    <h3>Sinister</h3>
-                    <p>No Hope</p>
+                <section class="song-details-content d-flex ">
+                    <div class="album-cover">
+                        <img src="./img/sinister.jpeg" alt="Sinister Album">
+                    </div>
+                    <div>
+                        <h3>Sinister</h3>
+                        <p>No Hope</p>
+                    </div>
                 </section>
                 
-                <div class="song-save d-flex">
+                <div class="song-save d-flex col">
                     <div class="favourite">
                         <i class="fa-regular fa-heart favourite-heart t-thin text-grey" title="Add to Favourite" aria-hidden="true"></i>
-                        <i class="fa-solid fa-heart favourite-heart add-favourite" aria-hidden="true"></i>
+                        <i class="fa-solid fa-heart favourite-heart add-favourite song-save-action" aria-hidden="true"></i>
+                    </div>
+                    <div class="save-to-playlist">
+                        <i class="fa-regular fa-folder t-thin text-grey" title="Add to Favourite" aria-hidden="true"></i>
+                        <i class="fa-solid fa-folder saved-in-playlist song-save-action" aria-hidden="true"></i>
                     </div>
                 </div>
             </div>
 
             <!-- song-player -->
-            <div class="song-player">
+            <div class="song-player d-flex col">
                 <!-- song-player-options -->
                 <div class="song-player-options d-flex">
-                    <button class="player-option bg-transparent"><i class="fa-solid fa-shuffle" aria-hidden="true" title="Add to Favourite"></i></button>
-                    <button class="player-option bg-transparent"><i class="fa-solid fa-backward-step" aria-hidden="true" title="Add to Favourite"></i></button>
-                    <button class="player-option bg-transparent"><i class="fa-solid fa-play" aria-hidden="true" title="Add to Favourite"></i></button>
-                    <button class="player-option bg-transparent"><i class="fa-solid fa-forward-step" aria-hidden="true" title="Add to Favourite"></i></button>
-                    <button class="player-option bg-transparent"><i class="fa-solid fa-arrow-rotate-right" aria-hidden="true" title="Add to Favourite"></i></button>
+                    <button class="player-option ui-button"><i class="fa-solid fa-shuffle" aria-hidden="true" title="Add to Favourite"></i></button>
+                    <button class="player-option ui-button"><i class="fa-solid fa-backward-step" aria-hidden="true" title="Add to Favourite"></i></button>
+                    <button class="player-option ui-button"><i class="fa-solid fa-play" aria-hidden="true" title="Add to Favourite"></i></button>
+                    <button class="player-option ui-button"><i class="fa-solid fa-forward-step" aria-hidden="true" title="Add to Favourite"></i></button>
+                    <button class="player-option ui-button"><i class="fa-solid fa-arrow-rotate-right" aria-hidden="true" title="Add to Favourite"></i></button>
                 </div>
                 <!-- song-player-progress -->
                 <div class="song-player-progress d-flex">
@@ -298,11 +303,11 @@
 
             <!-- other-options -->
             <div class="song-other-options d-flex">
-                <button class="player-option bg-transparent"><i class="fa-solid fa-list" aria-hidden="true" title="Current Queue"></i></button>
-                <button class="player-option bg-transparent"><i class="fa-solid fa-desktop" aria-hidden="true" title="Song Lyrics"></i></button>
+                <button class="player-option ui-button"><i class="fa-solid fa-list" aria-hidden="true" title="Current Queue"></i></button>
+                <button class="player-option ui-button"><i class="fa-solid fa-desktop" aria-hidden="true" title="Song Lyrics"></i></button>
                 <!-- div -->
                 <div class="song-volume d-flex">
-                    <button class="player-option bg-transparent"><i class="fa-solid fa-volume-high" aria-hidden="true" title="Current Queue"></i></button>
+                    <button class="player-option ui-button"><i class="fa-solid fa-volume-high" aria-hidden="true" title="Current Queue"></i></button>
                     <div class="volume-bar meter">
                         <div class="current-volume meter-amount"></div>
                     </div>

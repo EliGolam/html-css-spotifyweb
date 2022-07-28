@@ -161,7 +161,7 @@ footer {
 }
 
 .main-nav-links {
-    justify-content: center;
+    justify-content: space-evenly;
     column-gap: var(--gap);
     row-gap: var(--gap);
 }
@@ -218,12 +218,77 @@ footer {
 }
 /*#endregion ASIDE side navigation  */
 
+/* ************************** */
+/*#region FOOTER : media player */
+.media-player {
+    padding: var(--small-gap);
+    column-gap: var(--small-gap);
+    justify-content: space-between;
+    font-size: var(--fs-5);
+}
+
+.media-player > * {
+    flex-basis: 150px;
+    justify-content: space-between;
+}
+
+.media-player .d-flex {
+    align-items: center;
+}
+
+.media-player .ui-button {
+    font-size: var(--fs-4);
+    border-color: transparent;
+}
+
+.song-player {
+    justify-content: space-around;
+    flex-grow: 1;
+}
+
+.song-player .ui-button {
+    font-size: var(--fs-3);
+    width: 28px;
+    height: 28px;
+}
+
+.song-details .album-cover {
+    width: 30px;
+    margin-right: var(--small-gap);
+}
+
+.song-save {
+    font-size: var(--fs-3);
+}
+
+.song-player-progress,
+.song-player-options {
+    width: 100%;
+}
+
+.song-player-options {
+    justify-content: space-between;
+}
+
+.song-other-options .ui-button {
+    margin: var(--tiny-gap);
+}
+
+.song-volume {
+    flex-grow: 1;
+}
+/*#endregion FOOTER  */
+
 /*#endregion: BLOCKS */
 /* ****************************************************************************** */
 
 
 /* ****************************************************************************** */
 @media only screen and (min-width: 576px) {
+    :root {
+        --w-side-bar: 20%;
+    }
+    
     .d-none-xs {
         display: inline;
     }
@@ -231,12 +296,18 @@ footer {
     .d-none-sm {
         display: none;
     }
+
+    .media-player {
+        column-gap: var(--gap);
+    }
+
+    .song-player {
+        max-width: 400px;
+    }
 }
 
 @media only screen and (min-width: 768px) {
-    :root {
-        --w-side-bar: 20%;
-    }
+
     
     .collection-item {
         width: var(--collection-4-cards);
@@ -253,7 +324,7 @@ footer {
 .debug .favourite {
     position: relative;
 }
-.debug .add-favourite {
+.debug .song-save-action {
     position: absolute;
     opacity: 0;
 }
