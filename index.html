@@ -26,253 +26,267 @@
 </head>
 
 <!-- BODY -->
-<body class="debug">
-    <!--#region : flexbox for MAIN and ASIDE  -->
-    <div class="d-flex row-reverse">
-        <!--#region: MAIN  -->
-        <main class="bg-primary">
-            <h1 class="visually-hidden">Spotify</h1>
-            <!--#region: HEADER call-to-action -->
-            <div class="call-to-action bg-secondary">
-                <button>Upgrade to Premium</button>
-            </div>
-            <!--#endregion: HEADER call-to-action -->
-    
-            <!--#region: NAV main-nav  -->
-            <nav class="main-nav" aria-label="Main" role="navigation">
-                <ul class="main-nav-links d-flex">
-                    <li class="main-nav-item upper-case text-light">Your Mixes</li>
-                    <li class="main-nav-item upper-case text-light">Podcast</li>
-                    <li class="main-nav-item upper-case text-light">Trending</li>
-                    <li class="main-nav-item upper-case text-light">Genre and Mood</li>
-                    <li class="main-nav-item upper-case text-light">New</li>
-                    <li class="main-nav-item upper-case text-light">Explore</li>
-                </ul>
-            </nav>
-            <!--#endregion: NAV main-nav  -->
+<body class="debug bg-primary">
+    <div class="body-container">
+        <!--#region : flexbox for MAIN and ASIDE  -->
+        <div class="main-container d-flex row-reverse">
+            <!--#region : MAIN -->
+            <main>
+                <h1 class="visually-hidden">Spotify</h1>
+                <!--#region: HEADER call-to-action -->
+                <div class="call-to-action bg-secondary">
+                    <button class="ui-button upper-case">Upgrade to Premium</button>
+                </div>
+                <!--#endregion: HEADER call-to-action -->
+        
+                <!--#region: NAV main-nav  -->
+                <nav class="main-nav" aria-label="Main" role="navigation">
+                    <ul class="main-nav-links d-flex">
+                        <li class="main-nav-item upper-case text-light">Your Mixes</li>
+                        <li class="main-nav-item upper-case text-light">Podcast</li>
+                        <li class="main-nav-item upper-case text-light">Trending</li>
+                        <li class="main-nav-item upper-case text-light">Genre and Mood</li>
+                        <li class="main-nav-item upper-case text-light">New</li>
+                        <li class="main-nav-item upper-case text-light">Explore</li>
+                    </ul>
+                </nav>
+                <!--#endregion: NAV main-nav  -->
 
-            <!--#region: CONTENT  -->
-            <div class="container">
-                <!--#region: SECTION recently-played -->
-                <section id="recently-played">
-                    <h2 class="t-black">Recently Played</h2>
-                    <div class="collection d-flex f-wrap">
-                        <!-- collection-item1 -->
-                        <div class="collection-item d-flex">
-                            <!-- collection-item-cover -->
-                            <div class="collection-item-cover album-cover">
-                                <img src="./img/metal_lifting.jpg" alt="Heavy Metal Collection">
+                <!--#region: CONTENT  -->
+                <div class="container">
+                    <!--#region: SECTION recently-played -->
+                    <section id="recently-played">
+                        <h2 class="t-black">Recently Played</h2>
+                        <div class="collection d-flex f-wrap">
+                            <!-- collection-item1 -->
+                            <div class="collection-item d-flex">
+                                <!-- collection-item-cover -->
+                                <div class="collection-item-cover album-cover">
+                                    <img src="./img/metal_lifting.jpg" alt="Heavy Metal Collection">
+                                </div>
+                            </div>
+
+                            <!-- collection-item2 -->
+                            <div class="collection-item d-flex">
+                                <!-- collection-item-cover -->
+                                <div class="collection-item-cover album-cover">
+                                    <img src="./img/stranger.jpeg" alt="Cover: Stranger Things Vol. 1 (a Netflix Original Series Soundtrack)">
+                                </div>
+                            </div>
+
+                            <!-- collection-item3 -->
+                            <div class="collection-item d-flex">
+                                <!-- collection-item-cover -->
+                                <div class="collection-item-cover album-cover">
+                                    <img src="./img/aquietplace.jpeg" alt="Cover: A Quiet Place">
+                                </div>
+                            </div>
+
+                            <!-- collection-item4 -->
+                            <div class="collection-item d-flex">
+                                <!-- collection-item-cover -->
+                                <div class="collection-item-cover album-cover">
+                                    <img src="./img/split.jpeg" alt="Cover: Split">
+                                </div>
+                            </div>
+
+                            <!-- collection-item5 -->
+                            <div class="collection-item d-flex">
+                                <!-- collection-item-cover -->
+                                <div class="collection-item-cover album-cover">
+                                    <img src="./img/cure.jpeg" alt="Playlist: A cure for wellness">
+                                </div>
+                            </div>
+
+                            <!-- collection-item6 -->
+                            <div class="collection-item d-flex">
+                                <!-- collection-item-cover -->
+                                <div class="collection-item-cover album-cover">
+                                    <img src="./img/sinister.jpeg" alt="Cover: Sinister">
+                                </div>
                             </div>
                         </div>
+                    </section>
+                    <!--#endregion: SECTION recently-played -->
 
-                        <!-- collection-item2 -->
-                        <div class="collection-item d-flex">
-                            <!-- collection-item-cover -->
-                            <div class="collection-item-cover album-cover">
-                                <img src="./img/stranger.jpeg" alt="Cover: Stranger Things Vol. 1 (a Netflix Original Series Soundtrack)">
+                    <!--#region: SECTION Created by -->
+                    <section id="created-by">
+                        <h2 class="t-black">Created by Elias</h2>
+                        <div class="collection d-flex f-wrap">
+                            <!-- collection-item1 -->
+                            <div class="collection-item d-flex">
+                                <!-- collection-item-cover -->
+                                <div class="collection-item-cover album-cover">
+                                    <img src="./img/radar.jpeg" alt="Collection: Release Radar">
+                                </div>
+                            </div>
+
+                            <!-- collection-item2 -->
+                            <div class="collection-item d-flex">
+                                <!-- collection-item-cover -->
+                                <div class="collection-item-cover album-cover">
+                                    <img src="./img/mixdaily.jpeg" alt="Collection: Daily Mix">
+                                </div>
                             </div>
                         </div>
+                    </section>
+                    <!--#endregion: SECTION Created by -->
 
-                        <!-- collection-item3 -->
-                        <div class="collection-item d-flex">
-                            <!-- collection-item-cover -->
-                            <div class="collection-item-cover album-cover">
-                                <img src="./img/aquietplace.jpeg" alt="Cover: A Quiet Place">
+                    <!--#region: SECTION popular-artists -->
+                    <section id="popular-artists">
+                        <h2 class="t-black">Popular Artists</h2>
+                        <div class="collection d-flex f-wrap">
+                            <!-- collection-item1 -->
+                            <div class="collection-item d-flex">
+                                <!-- collection-item-cover -->
+                                <div class="collection-item-cover album-cover">
+                                    <img src="./img/youg.jpeg" alt="Artist: Youg">
+                                </div>
+                            </div>
+
+                            <!-- collection-item2 -->
+                            <div class="collection-item d-flex">
+                                <!-- collection-item-cover -->
+                                <div class="collection-item-cover album-cover">
+                                    <img src="./img/einaudi.jpeg" alt="Artist: Luigi Einaudi">
+                                </div>
                             </div>
                         </div>
+                    </section>
+                    <!--#endregion: SECTION popular-artists -->
+                </div>
+                <!--#endregion: CONTENT  -->
+            </main>
+            <!--#endregion : MAIN  -->
 
-                        <!-- collection-item4 -->
-                        <div class="collection-item d-flex">
-                            <!-- collection-item-cover -->
-                            <div class="collection-item-cover album-cover">
-                                <img src="./img/split.jpeg" alt="Cover: Split">
-                            </div>
+            <!--#region : ASIDE Side Navigation  -->
+            <aside class="side-nav bg-black" aria-labelledby="side-nav-title" role="navigation">
+                <h2 id="side-nav-title" class="visually-hidden">Side Navigation</h2>
+                <div class="container d-flex col bg-black">
+                    <!--#region: Wrapper top section side navigation  -->
+                    <div class="wrapper">
+                        <div class="company-logo">
+                            <a href="https://www.spotify.com/it/" class="navbar-brand d-none-xs" aria-label="Spotify">
+                                <img src="./img/logo.svg" alt="Spotify Logo">
+                            </a>
+                            <a href="https://www.spotify.com/it/" class="navbar-brand d-none-sm" aria-label="Spotify">
+                                <img src="./img/logo-small.svg" alt="Spotify Logo">
+                            </a>
                         </div>
 
-                        <!-- collection-item5 -->
-                        <div class="collection-item d-flex">
-                            <!-- collection-item-cover -->
-                            <div class="collection-item-cover album-cover">
-                                <img src="./img/cure.jpeg" alt="Playlist: A cure for wellness">
+                        <nav aria-label="Library" role="navigation">
+                            <div>
+                                <i aria-hidden="true" class="fa-solid fa-house" title="Home Page"></i>
+                                <h3 class="d-none-xs">Home</h3>
                             </div>
-                        </div>
+                            
+                            <div>
+                                <i aria-hidden="true" class="fa-solid fa-magnifying-glass" title="Search"></i>
+                                <h3 class="d-none-xs">Search</h3>
+                            </div>
 
-                        <!-- collection-item6 -->
-                        <div class="collection-item d-flex">
-                            <!-- collection-item-cover -->
-                            <div class="collection-item-cover album-cover">
-                                <img src="./img/sinister.jpeg" alt="Cover: Sinister">
+                            <div>
+                                <i aria-hidden="true" class="fa-solid fa-lines-leaning" title="My Library"></i>
+                                <h3 class="d-none-xs">My Library</h3>
                             </div>
+                        </nav>
+
+                        <div class="d-none-xs">
+                            <h3 class="t-bold upper-case">Playlist</h3>
+                            <div class="d-flex">
+                                <i aria-hidden="true" class="fa-solid fa-plus" title="Create Playlist"></i>
+                                <h4>Create Playlist</h4>
+                            </div>
+
+                            <h4>Playlist 1</h4>
+                            <h4>Playlist 2</h4>
+                            <h4>Playlist 3</h4>
+                            <h4>Playlist 4</h4>
+                            <h4>Playlist 5</h4>
                         </div>
                     </div>
-                </section>
-                <!--#endregion: SECTION recently-played -->
+                    <!--#endregion: Wrapper top section side navigation  -->
 
-                <!--#region: SECTION Created by -->
-                <section id="created-by">
-                    <h2 class="t-black">Created by Elias</h2>
-                    <div class="collection d-flex f-wrap">
-                        <!-- collection-item1 -->
-                        <div class="collection-item d-flex">
-                            <!-- collection-item-cover -->
-                            <div class="collection-item-cover album-cover">
-                                <img src="./img/radar.jpeg" alt="Collection: Release Radar">
-                            </div>
-                        </div>
-
-                        <!-- collection-item2 -->
-                        <div class="collection-item d-flex">
-                            <!-- collection-item-cover -->
-                            <div class="collection-item-cover album-cover">
-                                <img src="./img/mixdaily.jpeg" alt="Collection: Daily Mix">
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <!--#endregion: SECTION Created by -->
-
-                <!--#region: SECTION popular-artists -->
-                <section id="popular-artists">
-                    <h2 class="t-black">Popular Artists</h2>
-                    <div class="collection d-flex f-wrap">
-                        <!-- collection-item1 -->
-                        <div class="collection-item d-flex">
-                            <!-- collection-item-cover -->
-                            <div class="collection-item-cover album-cover">
-                                <img src="./img/youg.jpeg" alt="Artist: Youg">
-                            </div>
-                        </div>
-
-                        <!-- collection-item2 -->
-                        <div class="collection-item d-flex">
-                            <!-- collection-item-cover -->
-                            <div class="collection-item-cover album-cover">
-                                <img src="./img/einaudi.jpeg" alt="Artist: Luigi Einaudi">
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <!--#endregion: SECTION popular-artists -->
-            <!--#endregion: CONTENT  -->
-            </div>
-        </main>
-        <!--#endregion: MAIN  -->
-
-        <!--#region : ASIDE Side Navigation  -->
-        <aside class="side-nav bg-black" aria-labelledby="side-nav-title" role="navigation">
-            <h2 id="side-nav-title" class="visually-hidden">Side Navigation</h2>
-            <div class="container d-flex col">
-                <!--#region: Wrapper top section side navigation  -->
-                <div class="wrapper">
-                    <div class="company-logo">
-                        <a href="https://www.spotify.com/it/" class="navbar-brand d-none-xs" aria-label="Spotify">
-                            <img src="./img/logo.svg" alt="Spotify Logo">
-                        </a>
-                        <a href="https://www.spotify.com/it/" class="navbar-brand d-none-sm" aria-label="Spotify">
-                            <img src="./img/logo-small.svg" alt="Spotify Logo">
-                        </a>
-                    </div>
-
-                    <nav aria-label="Library" role="navigation">
-                        <div>
-                            <i aria-hidden="true" class="fa-solid fa-house" title="Home Page"></i>
-                            <h3 class="d-none-xs">Home</h3>
-                        </div>
-                        
-                        <div>
-                            <i aria-hidden="true" class="fa-solid fa-magnifying-glass" title="Search"></i>
-                            <h3 class="d-none-xs">Search</h3>
-                        </div>
-
-                        <div>
-                            <i aria-hidden="true" class="fa-solid fa-lines-leaning" title="My Library"></i>
-                            <h3 class="d-none-xs">My Library</h3>
-                        </div>
-                    </nav>
-
-                    <div class="d-none-xs">
-                        <h3 class="t-bold upper-case">Playlist</h3>
+                    <!--#region: Wrapper bottom section side navigation  -->
+                    <div class="wrapper">
                         <div class="d-flex">
-                            <i aria-hidden="true" class="fa-solid fa-plus" title="Create Playlist"></i>
-                            <h4>Create Playlist</h4>
+                            <i aria-hidden="true" class="fa-solid fa-arrow-down" title="Install Spotify Desktop"></i>
+                            <h3 class="d-none-xs">Install App</h3>
                         </div>
+                        <div>
+                            <hr class="d-none-xs">
+                            <div class="user-profile-image"></div>
+                            <h3 class="t-bold d-none-xs">Elias</h3>
+                        </div>
+                    </div>
+                    <!--#endregion: Wrapper bottom section side navigation  -->
+                </div>
+                
+            </aside>
+            <!--#endregion : ASIDE Side Navigation  -->
+        </div>
+        <!--#endregion : flexbox for MAIN and ASIDE  -->
 
-                        <h4>Playlist 1</h4>
-                        <h4>Playlist 2</h4>
-                        <h4>Playlist 3</h4>
-                        <h4>Playlist 4</h4>
-                        <h4>Playlist 5</h4>
+        <!--#region : FIXED FOOTER -->
+        <footer class="media-player bg-dark d-flex">
+            <h2 class="visually-hidden">Media Player</h2>
+            <!-- song-details -->
+            <div class="song-details d-flex">
+                <div class="album-cover">
+                    <img src="./img/sinister.jpeg" alt="Sinister Album">
+                </div>
+                
+                <section class="song-details-content">
+                    <h3>Sinister</h3>
+                    <p>No Hope</p>
+                </section>
+                
+                <div class="song-save d-flex">
+                    <div class="favourite">
+                        <i class="fa-regular fa-heart favourite-heart t-thin text-grey" title="Add to Favourite" aria-hidden="true"></i>
+                        <i class="fa-solid fa-heart favourite-heart add-favourite" aria-hidden="true"></i>
                     </div>
                 </div>
-                <!--#endregion: Wrapper top section side navigation  -->
-
-                <!--#region: Wrapper bottom section side navigation  -->
-                <div class="wrapper">
-                    <div class="d-flex">
-                        <i aria-hidden="true" class="fa-solid fa-arrow-down" title="Install Spotify Desktop"></i>
-                        <h3>Install App</h3>
-                    </div>
-                    <div>
-                        <hr class="d-none-xs">
-                        <div class="user-profile-image"></div>
-                        <h3 class="t-bold">Elias</h3>
-                    </div>
-                </div>
-                <!--#endregion: Wrapper bottom section side navigation  -->
             </div>
-            
-        </aside>
-        <!--#endregion : ASIDE Side Navigation  -->
+
+            <!-- song-player -->
+            <div class="song-player">
+                <!-- song-player-options -->
+                <div class="song-player-options d-flex">
+                    <button class="player-option bg-transparent"><i class="fa-solid fa-shuffle" aria-hidden="true" title="Add to Favourite"></i></button>
+                    <button class="player-option bg-transparent"><i class="fa-solid fa-backward-step" aria-hidden="true" title="Add to Favourite"></i></button>
+                    <button class="player-option bg-transparent"><i class="fa-solid fa-play" aria-hidden="true" title="Add to Favourite"></i></button>
+                    <button class="player-option bg-transparent"><i class="fa-solid fa-forward-step" aria-hidden="true" title="Add to Favourite"></i></button>
+                    <button class="player-option bg-transparent"><i class="fa-solid fa-arrow-rotate-right" aria-hidden="true" title="Add to Favourite"></i></button>
+                </div>
+                <!-- song-player-progress -->
+                <div class="song-player-progress d-flex">
+                    <!-- time stamps -->
+                    <p class="progress-time">0:25</p>
+                    <!-- progress-bar -->
+                    <div class="progress-bar meter">
+                        <div class="current-progress meter-amount"></div>
+                    </div>
+                    <!-- song-length -->
+                    <p class="progress-time">4:35</p>
+                </div>
+            </div>
+
+            <!-- other-options -->
+            <div class="song-other-options d-flex">
+                <button class="player-option bg-transparent"><i class="fa-solid fa-list" aria-hidden="true" title="Current Queue"></i></button>
+                <button class="player-option bg-transparent"><i class="fa-solid fa-desktop" aria-hidden="true" title="Song Lyrics"></i></button>
+                <!-- div -->
+                <div class="song-volume d-flex">
+                    <button class="player-option bg-transparent"><i class="fa-solid fa-volume-high" aria-hidden="true" title="Current Queue"></i></button>
+                    <div class="volume-bar meter">
+                        <div class="current-volume meter-amount"></div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!--#endregion : FIXED FOOTER -->
     </div>
-    <!--#endregion : flexbox for MAIN and ASIDE  -->
-
-    <!--#region : FIXED FOOTER -->
-    <footer class="media-player bg-dark d-flex">
-        <h2 class="visually-hidden">Media Player</h2>
-        <!-- song-details -->
-        <div class="song-details d-flex">
-            <div class="album-cover">
-                <img src="./img/sinister.jpeg" alt="Sinister Album">
-            </div>
-            
-            <section class="song-details-content">
-                <h3>Sinister</h3>
-                <p>No Hope</p>
-            </section>
-            
-            <div class="song-save d-flex">
-                <div class="favourite">
-                    <i class="fa-regular fa-heart favourite-heart t-thin text-grey" title="Add to Favourite" aria-hidden="true"></i>
-                    <i class="fa-solid fa-heart favourite-heart add-favourite" aria-hidden="true"></i>
-                </div>
-            </div>
-        </div>
-
-        <!-- song-player -->
-        <div class="song-player">
-            <!-- song-player-options -->
-            <div class="song-player-options d-flex">
-                <button class="player-option bg-transparent"><i class="fa-solid fa-shuffle" aria-hidden="true" title="Add to Favourite"></i></button>
-                <button class="player-option bg-transparent"><i class="fa-solid fa-backward-step" aria-hidden="true" title="Add to Favourite"></i></button>
-                <button class="player-option bg-transparent"><i class="fa-solid fa-play" aria-hidden="true" title="Add to Favourite"></i></button>
-                <button class="player-option bg-transparent"><i class="fa-solid fa-forward-step" aria-hidden="true" title="Add to Favourite"></i></button>
-                <button class="player-option bg-transparent"><i class="fa-solid fa-arrow-rotate-right" aria-hidden="true" title="Add to Favourite"></i></button>
-            </div>
-            <!-- song-player-progress -->
-            <div class="song-player-progress d-flex">
-                <!-- time stamps -->
-                <!-- progress-bar -->
-                <!-- song-length -->
-            </div>
-        </div>
-
-        <!-- other-options -->
-            <!-- icon1 -->
-            <!-- icon2 -->
-            <!-- div -->
-                <!-- icon3 -->
-                <!-- volume -->
-    </footer>
-    <!--#endregion : FIXED FOOTER -->
+    <!-- end BODY CONTAINER -->
 </body>
 </html>

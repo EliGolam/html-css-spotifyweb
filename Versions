@@ -1,18 +1,26 @@
 # VERSIONS
 
-## V 0.1
+### V 0.1
 
 - Added *wip* documentations
 - Added HTML boilerplate
 
-## V 0.2
+### V 0.2
 
 - Completed HTML **aside** section
 
-## V 0.3 
+### V 0.3 
 
 - Completed HTML **main** section
 
-## V 0.3.1
+#### V 0.3.1
 
 - Partially Completed **footer** section
+
+### V 0.4
+
+- Completed HTML **footer** section
+
+## V 1.0
+
+Completed Base HTML

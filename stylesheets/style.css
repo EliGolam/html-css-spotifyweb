@@ -1,21 +1,59 @@
-/* ARIA */
+/* ****************************************************************************** */
+/*#region : ARIA */
 .visually-hidden {
     position: absolute;
-  position: absolute !important;
-  width: 1px !important;
-  height: 1px !important;
-  padding: 0 !important;
-  margin: -1px !important;
-  overflow: hidden !important;
-  clip: rect(0,0,0,0) !important;
-  white-space: nowrap !important;
-  border: 0 !important;
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    padding: 0 !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    clip: rect(0,0,0,0) !important;
+    white-space: nowrap !important;
+    border: 0 !important;
 }
 
 /* Hidden in xs */
 .d-none-xs {
     display: none;
 }
+/*#endregion : ARIA */
+/* ****************************************************************************** */
+
+/* ****************************************************************************** */
+/*#region : HTML element layout and default */
+.body-container {
+    position: relative;
+
+    --w-side-bar: 15%;
+    --h-footer: 10vh;
+}
+
+main {
+    height: calc(100vh - var(--h-footer));
+    margin-left: var(--w-side-bar);
+    overflow: auto;
+}
+
+aside {
+    position: absolute;
+        top: 0;
+        left: 0;
+    height: 100%;
+    width: 15%;
+}
+
+footer { 
+    position: fixed;
+        bottom: 0;
+    height: 10vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+/*#endregion : HTML element layout and default */
+/* ****************************************************************************** */
+
 
 /* ****************************************************************************** */
 /*#region: UTILITIES */
@@ -36,12 +74,33 @@
     flex-wrap: wrap;
 }
 /*#endregion: flex  */
+
+/* UI */
+.ui-button {
+    background-color: transparent;
+    border: 2px solid var(--clr-white);
+    border-radius: 100px;
+}
+
+/*#region: Progress Bar */
+.meter {
+    width: 100%;
+    min-height: 3px;
+    border: 1px solid var(--clr-light-grey);
+}
+/*#endregion: Progress Bar */
+
+
 /*#endregion: UTILITIES */
 /* ****************************************************************************** */
 
 /* ****************************************************************************** */
 /*#region: BLOCKS */
+/* ************************** */
+/*#region call-to-action */
 
+
+/* ****************************************************************************** */
 /*#endregion: BLOCKS */
 /* ****************************************************************************** */
 
