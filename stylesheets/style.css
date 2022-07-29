@@ -91,6 +91,7 @@ footer {
     background-color: transparent;
     border: 2px solid var(--clr-white);
     border-radius: 100px;
+    cursor: pointer;
 }
 
 .nav-link,
@@ -192,11 +193,17 @@ footer {
     height: 100%;
     align-items: center;
     justify-content: space-between;
-    padding: var(--small-gap);
+    color: var(--clr-grey);
 }
 
 .nav-container .d-flex {
     align-items: center;
+}
+
+.nav-playlists, 
+.nav-bottom, 
+.company-logo {
+    padding: var(--small-gap);
 }
 
 .side-nav-links {
@@ -204,17 +211,32 @@ footer {
     width: 100%;
 }
 
-.nav-container .nav-link-alt {
+.side-nav-links .nav-link-alt {
     font-size: var(--fs-2);
 }
 
-.nav-playlists > * {
-    margin: var(--small-gap);
+.nav-playlists i {
+    padding: var(--small-gap);
+    border-radius: 4px;
+}
+
+.playlist-list > * {
+    margin-top: var(--small-gap);
+}
+
+.cta-install {
+    cursor: pointer;
+    padding-bottom: var(--small-gap);
+}
+
+.cta-install h3 {
+    font-size: var(--fs-5);
 }
 
 .cta-install .ui-button {
     width: 23px;
     height: 23px;
+    border-color: var(--clr-grey);
 }
 
 .user-profile-image {
@@ -326,7 +348,7 @@ footer {
     }
     
     .d-none-xs {
-        display: inline;
+        display: block;
     }
 
     .d-none-sm {
@@ -337,17 +359,32 @@ footer {
         align-items: flex-start;
     }
 
-    .side-nav-links i {
+    .side-nav-links i,
+    .nav-playlists i {
         font-size: var(--fs-3);
         margin-right: var(--small-gap);
     }
 
     .side-nav-links h3 {
-        font-size: var(--fs-4);
+        font-size: var(--fs-5);
     }
 
     .side-nav-links.d-flex {
         align-items: flex-start;
+    }
+
+    .nav-bottom {
+        width: 100%;
+    }
+
+    .cta-install .ui-button,
+    .user-profile-image {
+        margin-right: var(--small-gap);
+    }
+
+    .user-profile {
+        padding-top: var(--gap);
+        border-top: 1px solid var(--clr-grey);
     }
 
     .media-player {
@@ -363,6 +400,11 @@ footer {
 }
 
 @media only screen and (min-width: 992px) {
+
+    :root {
+        --w-side-bar: 250px;
+    }
+
     .collection-item {
         width: var(--collection-6-cards);
     }

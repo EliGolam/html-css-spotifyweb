@@ -215,34 +215,36 @@
                             </ul>
                         </nav>
 
-                        <div class="nav-playlists d-none-xs">
-                            <h3 class="t-bold upper-case">Playlist</h3>
+                        <div class="nav-playlists d-none-xs flow">
+                            <h3 class="t-bold upper-case text-light">Playlist</h3>
                             <div class="d-flex">
-                                <i aria-hidden="true" class="fa-solid fa-plus" title="Create Playlist"></i>
+                                <i aria-hidden="true" class="fa-solid fa-plus bg-grey text-black" title="Create Playlist"></i>
                                 <h4>Create Playlist</h4>
                             </div>
 
-                            <h4>Playlist 1</h4>
-                            <h4>Playlist 2</h4>
-                            <h4>Playlist 3</h4>
-                            <h4>Playlist 4</h4>
-                            <h4>Playlist 5</h4>
+                            <ul class="playlist-list">
+                                <li><a class="nav-link" href="#"><h4>Playlist 1</h4></a></li>
+                                <li><a class="nav-link" href="#"><h4>Playlist 2</h4></a></li>
+                                <li><a class="nav-link" href="#"><h4>Playlist 3</h4></a></li>
+                                <li><a class="nav-link" href="#"><h4>Playlist 4</h4></a></li>
+                                <li><a class="nav-link" href="#"><h4>Playlist 5</h4></a></li>
+                            </ul> 
                         </div>
                     </div>
                     <!--#endregion: Wrapper top section side navigation  -->
 
                     <!--#region: Wrapper bottom section side navigation  -->
-                    <div class="wrapper flow-extra">
-                        <div class="cta-install">
+                    <div class="nav-bottom wrapper flow">
+                        <div class="cta-install d-flex">
                             <button class="ui-button"><i aria-hidden="true" class="fa-solid fa-arrow-down" title="Install Spotify Desktop"></i></button>
                             <h3 class="d-none-xs">Install App</h3>
                         </div>
-                        <div class="d-flex">
+                        <a href="#" class="user-profile d-flex">
                             <div class="user-profile-image">
                                 <img src="./img/profile.svg" alt="Your Profile">
                             </div>
-                            <h3 class="t-bold d-none-xs">Elias</h3>
-                        </div>
+                            <h3 class="t-bold d-none-xs text-light">Elias</h3>
+                        </a>
                     </div>
                     <!--#endregion: Wrapper bottom section side navigation  -->
                 </div>   

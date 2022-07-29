@@ -90,6 +90,7 @@ body {
 .text-light { color: var(--clr-white);}
 .text-light-grey { color: var(--clr-light-grey);}
 .text-grey { color: var(--clr-grey);}
+.text-black { color: var(--clr-black);}
 
 .upper-case { text-transform: uppercase;}
 .t-align-center { text-align: center;}
