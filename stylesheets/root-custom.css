@@ -43,7 +43,7 @@
     --large-gap: 3rem;
     --gap: 1.5rem;
     --small-gap: .6rem;
-    --tiny-gap: 1px;
+    --tiny-gap: 3px;
     
     --content-width: 100%; 
 
@@ -54,7 +54,7 @@
     --xxl-breakpoint: 1400px;
 
     /* Element variables */
-    --w-side-bar: 10%;
+    --w-side-bar: 11%;
     --h-footer: 8vh;
 
     --collection-2-cards: calc(100% / 2 - var(--small-gap));

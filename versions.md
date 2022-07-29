@@ -52,3 +52,7 @@ Completed XS mobile layout
 #### V 2.2.1
 
 Fixed spacing in the footer
+
+#### V 2.2.2 
+
+Fixed Nav alignment issue

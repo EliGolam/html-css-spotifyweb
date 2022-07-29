@@ -96,6 +96,7 @@ footer {
 .nav-link,
 .nav-link-alt {
     position: relative;
+    cursor: pointer;
 }
 
 .nav-link {
@@ -131,9 +132,16 @@ footer {
 /*#region: Progress Bar */
 .meter {
     width: 100%;
-    min-height: 3px;
-    border: 1px solid var(--clr-light-grey);
+    min-height: 4px;
+    background-color: var(--clr-grey);
 }
+
+.meter-amount {
+    width: 40%;
+    min-height: 4px;
+    background-color: var(--clr-white);
+}
+
 /*#endregion: Progress Bar */
 
 /*#endregion: UTILITIES */
@@ -180,28 +188,28 @@ footer {
 
 /* ************************** */
 /*#region ASIDE side navigation */
-.side-nav {
-    padding: var(--small-gap) 0;
-}
-
 .nav-container {
     height: 100%;
     align-items: center;
     justify-content: space-between;
+    padding: var(--small-gap);
 }
 
-.company-logo {
-    margin: var(--small-gap);
+.nav-container .d-flex {
+    align-items: center;
+}
 
+.side-nav-links {
+    row-gap: var(--small-gap);
+    width: 100%;
 }
 
 .nav-container .nav-link-alt {
     font-size: var(--fs-2);
-    text-align: center;
 }
 
-.cta-install {
-    text-align: center;
+.nav-playlists > * {
+    margin: var(--small-gap);
 }
 
 .cta-install .ui-button {
@@ -222,8 +230,8 @@ footer {
 /*#region FOOTER : media player */
 .media-player {
     padding: var(--small-gap);
-    column-gap: var(--gap);
     justify-content: space-between;
+    column-gap: var(--tiny-gap);
     font-size: var(--fs-6);
 }
 
@@ -253,6 +261,17 @@ footer {
 
 .song-save {
     font-size: var(--fs-4);
+}
+
+.song-save > * {
+    position: relative;
+}
+
+.debug .song-save-action {
+    position: absolute;
+        top: 0;
+        left: 0;
+    opacity: 0;
 }
 
 
@@ -303,7 +322,7 @@ footer {
 @media only screen and (min-width: 576px) {
 
     :root {
-        --w-side-bar: 20%;
+        --w-side-bar: 25%;
     }
     
     .d-none-xs {
@@ -312,6 +331,23 @@ footer {
 
     .d-none-sm {
         display: none;
+    }
+
+    .nav-container {
+        align-items: flex-start;
+    }
+
+    .side-nav-links i {
+        font-size: var(--fs-3);
+        margin-right: var(--small-gap);
+    }
+
+    .side-nav-links h3 {
+        font-size: var(--fs-4);
+    }
+
+    .side-nav-links.d-flex {
+        align-items: flex-start;
     }
 
     .media-player {
@@ -333,12 +369,6 @@ footer {
 }
 /* ****************************************************************************** */
 /*#region: DEBUG */
-.debug .favourite {
-    position: relative;
-}
-.debug .song-save-action {
-    position: absolute;
-    opacity: 0;
-}
+
 /*#endregion: DEBUG */
 /* ****************************************************************************** */

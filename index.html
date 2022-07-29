@@ -188,7 +188,7 @@
                 <h2 id="side-nav-title" class="visually-hidden">Side Navigation</h2>
                 <div class="nav-container d-flex col">
                     <!--#region: Wrapper top section side navigation  -->
-                    <div class="wrapper flow-extra">
+                    <div class="wrapper flow">
                         <div class="company-logo">
                             <a href="https://www.spotify.com/it/" class="navbar-brand d-none-xs" aria-label="Spotify">
                                 <img src="./img/logo.svg" alt="Spotify Logo">
@@ -199,23 +199,23 @@
                         </div>
 
                         <nav class="flow" aria-label="Library" role="navigation">
-                            <div class="nav-link-alt">
-                                <i aria-hidden="true" class="fa-solid fa-house" title="Home Page"></i>
-                                <h3 class="d-none-xs">Home</h3>
-                            </div>
-                            
-                            <div class="nav-link-alt">
-                                <i aria-hidden="true" class="fa-solid fa-magnifying-glass" title="Search"></i>
-                                <h3 class="d-none-xs">Search</h3>
-                            </div>
-
-                            <div class="nav-link-alt">
-                                <i aria-hidden="true" class="fa-solid fa-lines-leaning" title="My Library"></i>
-                                <h3 class="d-none-xs">My Library</h3>
-                            </div>
+                            <ul class="side-nav-links d-flex col flow">
+                                <li><a href="#" class="nav-link-alt d-flex">
+                                    <i aria-hidden="true" class="fa-solid fa-house" title="Home Page"></i>
+                                    <h3 class="d-none-xs">Home</h3>
+                                </a></li>
+                                <li><a href="#" class="nav-link-alt d-flex">
+                                    <i aria-hidden="true" class="fa-solid fa-magnifying-glass" title="Search"></i>
+                                    <h3 class="d-none-xs">Search</h3>
+                                </a></li>
+                                <li><a href="#" class="nav-link-alt d-flex">
+                                    <i aria-hidden="true" class="fa-solid fa-lines-leaning" title="My Library"></i>
+                                    <h3 class="d-none-xs">My Library</h3>
+                                </a></li>
+                            </ul>
                         </nav>
 
-                        <div class="d-none-xs">
+                        <div class="nav-playlists d-none-xs">
                             <h3 class="t-bold upper-case">Playlist</h3>
                             <div class="d-flex">
                                 <i aria-hidden="true" class="fa-solid fa-plus" title="Create Playlist"></i>
@@ -237,7 +237,7 @@
                             <button class="ui-button"><i aria-hidden="true" class="fa-solid fa-arrow-down" title="Install Spotify Desktop"></i></button>
                             <h3 class="d-none-xs">Install App</h3>
                         </div>
-                        <div>
+                        <div class="d-flex">
                             <div class="user-profile-image">
                                 <img src="./img/profile.svg" alt="Your Profile">
                             </div>
