@@ -170,7 +170,7 @@ footer {
 /* ************************** */
 /*#region CONTENT */
 .section-title {
-    font-size: var(--fs-2);
+    font-size: var(--fs-1);
     margin-bottom: var(--gap);
 }
 .main-container {
@@ -222,34 +222,28 @@ footer {
 /*#region FOOTER : media player */
 .media-player {
     padding: var(--small-gap);
-    column-gap: var(--small-gap);
+    column-gap: var(--gap);
     justify-content: space-between;
-    font-size: var(--fs-5);
+    font-size: var(--fs-6);
 }
 
 .media-player > * {
-    flex-basis: 150px;
-    justify-content: space-between;
+    flex-grow: 1;
 }
 
 .media-player .d-flex {
     align-items: center;
+    justify-content: space-between;
 }
 
 .media-player .ui-button {
-    font-size: var(--fs-4);
+    font-size: var(--fs-5);
     border-color: transparent;
 }
 
-.song-player {
-    justify-content: space-around;
-    flex-grow: 1;
-}
 
-.song-player .ui-button {
-    font-size: var(--fs-3);
-    width: 28px;
-    height: 28px;
+.song-details {
+    max-width: 130px;
 }
 
 .song-details .album-cover {
@@ -258,16 +252,38 @@ footer {
 }
 
 .song-save {
-    font-size: var(--fs-3);
+    font-size: var(--fs-4);
 }
 
-.song-player-progress,
-.song-player-options {
+
+.song-player {
+    max-width: 400px;
+}
+
+.song-player .ui-button {
+    font-size: var(--fs-4);
+    width: 28px;
+    height: 28px;
+}
+
+.song-player-options,
+.song-player-progress {
     width: 100%;
 }
 
-.song-player-options {
-    justify-content: space-between;
+.song-player-options div {
+    flex-grow: 1;
+    max-width: 30%;
+}
+
+.song-player-progress {
+    column-gap: var(--small-gap);
+}
+
+
+.song-other-options {
+    justify-content: space-around;
+    max-width: 250px;
 }
 
 .song-other-options .ui-button {
@@ -285,6 +301,7 @@ footer {
 
 /* ****************************************************************************** */
 @media only screen and (min-width: 576px) {
+
     :root {
         --w-side-bar: 20%;
     }
@@ -300,15 +317,10 @@ footer {
     .media-player {
         column-gap: var(--gap);
     }
-
-    .song-player {
-        max-width: 400px;
-    }
 }
 
 @media only screen and (min-width: 768px) {
 
-    
     .collection-item {
         width: var(--collection-4-cards);
     }

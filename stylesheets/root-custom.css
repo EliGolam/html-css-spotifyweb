@@ -18,12 +18,12 @@
     /* font: font-style font-variant font-weight font-size/line-height font-family; */
     --fontfamily-default: 'Montserrat', Helvetica, Arial, sans-serif;
 
-    --fs-1: 3rem;
-    --fs-2: 1.5rem;
+    --fs-1: 1.5rem;
+    --fs-2: 1.2rem;
     --fs-3: 1rem;
-    --fs-4: .7rem;
-    --fs-5: .6rem;
-    --fs-6: .3rem;
+    --fs-4: .9rem;
+    --fs-5: .7rem;
+    --fs-6: .6rem;
 
     --fw-black: 800;
     --fw-bold: 700;
@@ -55,7 +55,7 @@
 
     /* Element variables */
     --w-side-bar: 10%;
-    --h-footer: 10vh;
+    --h-footer: 8vh;
 
     --collection-2-cards: calc(100% / 2 - var(--small-gap));
     --collection-4-cards: calc(100% / 4 - var(--small-gap));
@@ -63,7 +63,7 @@
 }
 
 body {
-    font: var(--fw-regular) var(--fs-4)/var(--lh-default) var(--fontfamily-default);
+    font: var(--fw-regular) var(--fs-5)/var(--lh-default) var(--fontfamily-default);
     color: var(--clr-white);
 }
 
