@@ -56,3 +56,8 @@ Fixed spacing in the footer
 #### V 2.2.2 
 
 Fixed Nav alignment issue
+
+
+#### V 2.2.3
+
+Added Album play hover overlay animation added
